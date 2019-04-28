@@ -1,0 +1,125 @@
+Building:
+| Building id* | Date | Architectural style |
+
+Architect:
+| Building id* | architect name |
+
+Image:
+| Image id* | Image path | Thumbnail path | Lighting conditions | Shooting date | Coordinates | Focal Distance | Pose | Intrinsic |
+
+Architectural Element:
+| Element id* | Name | Style |
+
+Model:
+| Model id* | Method | Software | Texture | Type |
+
+Address:
+| Address id* | Building id* | Street number | Street | City | Postal Code | Country |
+
+Image of Building:
+| Building id* | Image id* | Region of Interest |
+
+Element of Building:
+| Building id* | Element id* |
+
+Image of Element:
+| Element id* | Image id* | Region of Interest |
+
+Model of Element:
+| Element id* | Model id* |
+
+
+* Building
+
+  | Attribute           | Key | Type            | Null? | Default |
+  |---------------------+-----+-----------------+-------+---------|
+  | bid                 | yes | serial          | no    |         |
+  | date                | no  | date or integer | yes   |         |
+  | architectural style | no  | text            | yes   |         |
+
+* Architect
+
+  | Attribute      | Key           | Type   | Null? | Default |
+  |----------------+---------------+--------+-------+---------|
+  | bid            | yes (foreign) | serial | no    |         |
+  | architect name | yes           | text   | no    |         |
+
+* Image
+
+  | Attribute           | Key | Type             | Null? | Default |
+  |---------------------+-----+------------------+-------+---------|
+  | iid                 | yes | serial           | no    |         |
+  | image path          | no  | text             | no    |         |
+  | thumbnail path      | no  | text             | yes   |         |
+  | lighting conditions | no  | ???              | yes   |         |
+  | shooting date       | no  | date? timestamp? | no?   |         |
+  | coordinates         | no  | point            | no?   |         |
+  | focal distance      | no  | real             | yes   |         |
+  | pose                | no  | ???              | yes   |         |
+  | intrinsic           | no  | ???              | yes   |         | 
+
+* Element
+
+  | Attribute | Key | Type   | Null? | Default |
+  |-----------+-----+--------+-------+---------|
+  | eid       | yes | serial | no    |         |
+  | name      | no  | text   | no    |         |
+  | style     | no  | text   | no    |         |
+  
+* Model
+
+  | Attribute | Key | Type   | Null? | Default |
+  |-----------+-----+--------+-------+---------|
+  | mid       | yes | serial | no    |         |
+  | method    | no  | text   | yes   |         |
+  | software  | no  | text   | no    |         |
+  | texture   | no  | text   | yes   |         |
+  | type      | no  | text   | no    |         | 
+
+* Address
+
+  | Attribute     | Key           | Type    | Null? | Default |
+  |---------------+---------------+---------+-------+---------|
+  | aid           | yes           | serial  | no    |         |
+  | bid           | yes (foreign) | serial  | no    |         |
+  | streen number | no            | integer | no    |         |
+  | street        | no            | text    | no    |         |
+  | city          | no            | text    | no    |         |
+  | postal code   | no            | text?   | no    |         |
+  | country       | no            | text    | no    |         |
+
+* image_of_building
+
+  | Attribute          | Key           | Type   | Null? | Default |
+  |--------------------+---------------+--------+-------+---------|
+  | bid                | yes (foreign) | serial | no    |         |
+  | iid                | yes (foreign) | serial | no    |         |
+  | region of interest | no            | box    | no?   |         |
+
+* Element_of_building
+
+  | Attribute | Key           | Type   | Null? | Default |
+  |-----------+---------------+--------+-------+---------|
+  | bid       | yes (foreign) | serial | no    |         |
+  | eid       | yes (foreign) | serial | no    |         |
+
+* image_of_element
+
+  | Attribute          | Key           | Type   | Null? | Default |
+  |--------------------+---------------+--------+-------+---------|
+  | eid                | yes (foreign) | serial | no    |         |
+  | iid                | yes (foreign) | serial | no    |         |
+  | region of interest | no            | box    | no?   |         |
+
+* Model_of_element
+
+  | Attribute | Key           | Type   | Null? | Default |
+  |-----------+---------------+--------+-------+---------|
+  | eid       | yes (foreign) | serial | no    |         |
+  | mid       | yes (foreign) | serial | no    |         |
+
+
+
+  
+  
+  

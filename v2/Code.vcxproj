@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{60D07A4F-F843-330B-A63A-E2A5796B5CFA}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>c:\Qt\4.5.0-vc\qt\include\QtCore;c:\Qt\4.5.0-vc\qt\include\QtGui;c:\Qt\4.5.0-vc\qt\include\QtOpenGL;c:\Qt\4.5.0-vc\qt\include;.;include\cimg;include\exiv2;include\siftpp;include\fastpd;include\qwtplot3d;c:\Qt\4.5.0-vc\qt\include\ActiveQt;debug;.;c:\Qt\4.5.0-vc\qt\mkspecs\default;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 -Zm200 -w34100 -w34189 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QWT3D_DLL;_USE_MATH_DEFINES;VL_USEFASTMATH;VL_LOWE_STRICT;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;gdi32.lib;user32.lib;c:\Qt\4.5.0-vc\qt\lib\qtmaind.lib;gdi32.lib;libs/debug/exiv2.lib;libs/debug/libexpat.lib;libs/debug/xmpsdk.lib;libs/debug/zlib1d.lib;libs/debug/siftpp.lib;libs/qwtplot3d.lib;libs/fastpd.lib;c:\Qt\4.5.0-vc\qt\lib\QtOpenGLd4.lib;c:\Qt\4.5.0-vc\qt\lib\QtGuid4.lib;c:\Qt\4.5.0-vc\qt\lib\QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\Qt\4.5.0-vc\qt\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" "/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <OutputFile>debug\Code.exe</OutputFile>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QWT3D_DLL;_USE_MATH_DEFINES;VL_USEFASTMATH;VL_LOWE_STRICT;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>c:\Qt\4.5.0-vc\qt\include\QtCore;c:\Qt\4.5.0-vc\qt\include\QtGui;c:\Qt\4.5.0-vc\qt\include\QtOpenGL;c:\Qt\4.5.0-vc\qt\include;.;include\cimg;include\exiv2;include\siftpp;include\fastpd;include\qwtplot3d;c:\Qt\4.5.0-vc\qt\include\ActiveQt;release;.;c:\Qt\4.5.0-vc\qt\mkspecs\default;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 -Zm200 -w34100 -w34189 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QWT3D_DLL;_USE_MATH_DEFINES;VL_USEFASTMATH;VL_LOWE_STRICT;QT_DLL;QT_NO_DEBUG;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;gdi32.lib;user32.lib;c:\Qt\4.5.0-vc\qt\lib\qtmain.lib;gdi32.lib;libs/debug/exiv2.lib;libs/debug/libexpat.lib;libs/debug/xmpsdk.lib;libs/debug/zlib1d.lib;libs/debug/siftpp.lib;libs/qwtplot3d.lib;libs/fastpd.lib;c:\Qt\4.5.0-vc\qt\lib\QtOpenGL4.lib;c:\Qt\4.5.0-vc\qt\lib\QtGui4.lib;c:\Qt\4.5.0-vc\qt\lib\QtCore4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\Qt\4.5.0-vc\qt\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" "/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OutputFile>release\Code.exe</OutputFile>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>QT_NO_DEBUG;NDEBUG;_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QWT3D_DLL;_USE_MATH_DEFINES;VL_USEFASTMATH;VL_LOWE_STRICT;QT_DLL;QT_NO_DEBUG;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="gui\ClickablePixmap.cpp" />
+    <ClCompile Include="tools\CsvReader.cpp" />
+    <ClCompile Include="tools\CsvWriter.cpp" />
+    <ClCompile Include="gui\InfoPage.cpp" />
+    <ClCompile Include="gui\LoadPage.cpp" />
+    <ClCompile Include="gui\MatchPage.cpp" />
+    <ClCompile Include="gui\MatchThread.cpp" />
+    <ClCompile Include="gui\PairsPage.cpp" />
+    <ClCompile Include="tools\PhotoInfo.cpp" />
+    <ClCompile Include="gui\Point.cpp" />
+    <ClCompile Include="gui\RectifyPage.cpp" />
+    <ClCompile Include="gui\RectifyThread.cpp" />
+    <ClCompile Include="gui\SiftSearchThread.cpp" />
+    <ClCompile Include="core\Stereo.cpp" />
+    <ClCompile Include="gui\SurfaceDisplay.cpp" />
+    <ClCompile Include="gui\TriangulatePage.cpp" />
+    <ClCompile Include="core\View.cpp" />
+    <ClCompile Include="core\ViewPair.cpp" />
+    <ClCompile Include="tools\WavefrontWriter.cpp" />
+    <ClCompile Include="tools\imageTools.cpp" />
+    <ClCompile Include="gui\main.cpp" />
+    <ClCompile Include="tools\mathTools.cpp" />
+    <ClCompile Include="tools\mrfMatching.cpp" />
+    <ClCompile Include="tools\siftSearch.cpp" />
+    <ClCompile Include="tools\tools.cpp" />
+    <ClCompile Include="debug\moc_ClickablePixmap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_ClickablePixmap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_InfoPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_InfoPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_LoadPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_LoadPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_PairsPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_PairsPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_RectifyPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_RectifyPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_TriangulatePage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_TriangulatePage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gui\ClickablePixmap.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\ClickablePixmap.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"debug" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\ClickablePixmap.h -o debug\moc_ClickablePixmap.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC gui\ClickablePixmap.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_ClickablePixmap.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\ClickablePixmap.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"release" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\ClickablePixmap.h -o release\moc_ClickablePixmap.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC gui\ClickablePixmap.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_ClickablePixmap.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="tools\CsvReader.h" />
+    <ClInclude Include="tools\CsvWriter.h" />
+    <CustomBuild Include="gui\InfoPage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\InfoPage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"debug" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\InfoPage.h -o debug\moc_InfoPage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC gui\InfoPage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_InfoPage.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\InfoPage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"release" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\InfoPage.h -o release\moc_InfoPage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC gui\InfoPage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_InfoPage.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\LoadPage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\LoadPage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"debug" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\LoadPage.h -o debug\moc_LoadPage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC gui\LoadPage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_LoadPage.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\LoadPage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"release" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\LoadPage.h -o release\moc_LoadPage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC gui\LoadPage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_LoadPage.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="gui\MatchPage.h" />
+    <ClInclude Include="gui\MatchThread.h" />
+    <CustomBuild Include="gui\PairsPage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\PairsPage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"debug" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\PairsPage.h -o debug\moc_PairsPage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC gui\PairsPage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_PairsPage.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\PairsPage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"release" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\PairsPage.h -o release\moc_PairsPage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC gui\PairsPage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_PairsPage.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="tools\PhotoInfo.h" />
+    <ClInclude Include="gui\Point.h" />
+    <CustomBuild Include="gui\RectifyPage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\RectifyPage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"debug" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\RectifyPage.h -o debug\moc_RectifyPage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC gui\RectifyPage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_RectifyPage.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\RectifyPage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"release" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\RectifyPage.h -o release\moc_RectifyPage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC gui\RectifyPage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_RectifyPage.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="gui\RectifyThread.h" />
+    <ClInclude Include="gui\SiftSearchThread.h" />
+    <ClInclude Include="core\Singleton.h" />
+    <ClInclude Include="core\Stereo.h" />
+    <ClInclude Include="gui\SurfaceDisplay.h" />
+    <CustomBuild Include="gui\TriangulatePage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\TriangulatePage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"debug" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\TriangulatePage.h -o debug\moc_TriangulatePage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC gui\TriangulatePage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_TriangulatePage.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe;gui\TriangulatePage.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\4.5.0-vc\qt\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQWT3D_DLL -D_USE_MATH_DEFINES -DVL_USEFASTMATH -DVL_LOWE_STRICT -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"c:\Qt\4.5.0-vc\qt\include\QtCore" -I"c:\Qt\4.5.0-vc\qt\include\QtGui" -I"c:\Qt\4.5.0-vc\qt\include\QtOpenGL" -I"c:\Qt\4.5.0-vc\qt\include" -I"." -I"include\cimg" -I"include\exiv2" -I"include\siftpp" -I"include\fastpd" -I"include\qwtplot3d" -I"c:\Qt\4.5.0-vc\qt\include\ActiveQt" -I"release" -I"." -Ic:\Qt\4.5.0-vc\qt\mkspecs\default -D_MSC_VER=1500 -DWIN32 gui\TriangulatePage.h -o release\moc_TriangulatePage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC gui\TriangulatePage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_TriangulatePage.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="core\View.h" />
+    <ClInclude Include="core\ViewPair.h" />
+    <ClInclude Include="tools\WavefrontWriter.h" />
+    <ClInclude Include="tools\imageTools.h" />
+    <ClInclude Include="tools\mathTools.h" />
+    <ClInclude Include="tools\mrfMatching.h" />
+    <ClInclude Include="tools\regminmax.h" />
+    <ClInclude Include="tools\siftSearch.h" />
+    <ClInclude Include="tools\tools.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
